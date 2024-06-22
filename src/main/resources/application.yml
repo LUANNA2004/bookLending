@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/libarysys
+    username: root
+    password: root
+  redis:
+    host: localhost
+    port: 6379
+
+mybatis:
+  # ??XML???????????????
+  type-aliases-package: com.qingqiu.pojo
+  # ??MyBatis?xml??????
+  mapper-locations: classpath:mapper/*.xml
+  # ????uName?????u_name
+  map-underscore-to-camel-case: true
